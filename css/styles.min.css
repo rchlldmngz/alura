@@ -2,12 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 p {
-    font-size: 20px;
-    line-height: 40px;
-    color: #9e6e34;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: -100;
+    line-height: 30px;
+    color: #ffff;
     padding-bottom: 12px;
-    font-family: 'magik', sans-serif;
-    /* font-family: 'Windsong', sans-serif;*/
+    padding-right: 10px;
 }
 
 h1 {
@@ -22,12 +23,14 @@ h2 {
 }
 
 h3 {
-    color: #a52c1f;
+    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 40px;
-    font-family: 'magik', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 80px;
+    font-family: 'Aquiline', sans-serif;
 }
 
 h4 {
@@ -150,7 +153,11 @@ body {
     font-weight: 300;
     color: black;
     -webkit-text-size-adjust: 100%;
-    background: #F6EBE6;
+    background: url("../img/background.jpg"), center center;
+    background-repeat: no-repeat;
+ 
+    background-size: cover
+
 
 }
 
@@ -406,7 +413,6 @@ section .header {
 
 .hero {
     min-height: 400px;
-    background: url("../img/banner.gif") center center;
     -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -436,8 +442,8 @@ section .header {
 }
 
 .hero .hero-content img {
-    width: 45%;
-    margin-bottom: 2%
+    width: 100%;
+    margin-bottom: %
 }
 
 .navigation {
@@ -450,14 +456,14 @@ section .header {
 .fixed {
     padding: 0px 0px;
     position: fixed;
-    background-color: #5e150def;
+    background-color: rgba(15, 13, 27, 0.849);
     z-index: 999;
     width: 100%
 }
 /*inner box of header*/
 header {
     padding: 10px 0px;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(5, 0, 0, 0.2);
     position: relative;
     text-align: left;
     width: 100%;
@@ -1123,19 +1129,26 @@ ol {
 }
 
 ara {
-    Color: #a52c1f;
-    font-family: 'Harry Potter', sans-serif;
-    font-size: 25px;
+    
+    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'windsong', sans-serif;
+    font-size: 38px;
 }
 
 strong {
-      Color: #a52c1f;
-      font-family: 'magik', sans-serif;
-      font-size: 20px;
+    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-family: 'windsong', sans-serif;
+      font-size: 45px;
 }
 
 iframe {
     width: 100%;
+    border: blanchedalmond;
+    border-width: 20px;
 }
 
 #radio {
@@ -1145,4 +1158,7 @@ iframe {
 
 .form-check-label {
     font-weight: 300;
+    color: #ffff;
+    font-family: 'aquiline', sans-serif;
+    font-size: 20px;
 }

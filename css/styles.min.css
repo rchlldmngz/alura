@@ -3,9 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 p {
     font-size: 15px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-weight: -100;
-    line-height: 30px;
+    line-height: 25px;
     color: #ffff;
     padding-bottom: 12px;
     padding-right: 10px;
@@ -38,8 +38,11 @@ h4 {
 }
 
 h5 {
-    font-size: 18px;
-    color: #B38955;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'wizard world', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-weight: bold
@@ -183,10 +186,10 @@ section .header {
     padding: 10px 0;
     
 }  
-/*not in use*/
+/*not in use
 .section-border {
     border-bottom: 1px solid #ec0808
-}
+}*/
 
 .tooltip {
     position: absolute;
@@ -413,6 +416,7 @@ section .header {
 
 .hero {
     min-height: 400px;
+    background-image: url("../img/banner.jpg");
     -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -438,12 +442,13 @@ section .header {
 }
 
 .hero .hero-content {
-    padding-top: 19%
+    padding-top: 5%
 }
 
 .hero .hero-content img {
-    width: 100%;
-    margin-bottom: %
+    width: 140%;
+    position: center;
+    margin-bottom: 0%
 }
 
 .navigation {
@@ -486,7 +491,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 120px;
+    width: 55px;
 }
 
 header ul.primary-nav {
@@ -850,7 +855,7 @@ header .member-actions {
 }
 
 #wear img {
-    width: 100%;
+    width: 70%;
 }
 
 #gift img {
@@ -1141,8 +1146,7 @@ strong {
     background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-      font-family: 'windsong', sans-serif;
-      font-size: 45px;
+      font-size: 17px;
 }
 
 iframe {
@@ -1159,6 +1163,5 @@ iframe {
 .form-check-label {
     font-weight: 300;
     color: #ffff;
-    font-family: 'aquiline', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }

@@ -12,10 +12,10 @@ $(document).ready(function () {
     audio.loop
 
     document.body.addEventListener("mousemove", function () {
-        if (isChrome)
-        {
+        // if (isChrome)
+        // {
             audio.play();
-        }
+        // }
     });
 
     Audio.prototype.play = (function(play) {

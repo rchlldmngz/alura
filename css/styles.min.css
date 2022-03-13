@@ -2,14 +2,15 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 p {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
-    font-weight: -300;
-    line-height: 23px;
+    font-weight: 0;
+    line-height: 20px;
     color: #ffff;
     padding-bottom: 16px;
     padding-right: 10px;
-    font-family: 'Quintella', sans-serif;
+
+ 
 }
 
 h1 {
@@ -27,11 +28,11 @@ h3 {
     background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 300;
-    letter-spacing: 0px;
-    line-height: 80px;
-    font-family: 'Quintella', sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    font-family: 'magic school one', sans-serif;
 }
 
 h4 {
@@ -94,20 +95,20 @@ h6 {
 /*submit*/
 .btn-fill {
     color: #fff;
-    border: solid 2px #a52c1f;;
+    border: solid 2px #040b31;;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
     text-transform: uppercase;
-    background-color: #a52c1f;
+    background-color: #040b31;
 }
 
 .btn-fill:hover,
 .btn-fill:focus {
     color: black;
-    background-color: #cca371;
-    border-color: #cca371
+    background-color: #0096FF;
+    border-color: #0096FF
 }
 
 .btn-small {
@@ -840,7 +841,7 @@ header .member-actions {
 #safety img,
 #other img,
 #instagram img {
-    width: 200%;
+    width: 100%;
 }
 
 #events img {
@@ -1032,7 +1033,7 @@ header .member-actions {
 }
 /*RSVP Icons*/
 .rsvp .rsvp-form .form-input-group i {
-    color: #a52c1f;
+    color: #040b31;
     font-size: 14px
 }
 
@@ -1138,6 +1139,7 @@ strong {
     color: #daa520;
     font-size: 15px;
     letter-spacing: 1px;
+    font-family: 'mixserif', sans-serif;
 }
 
 iframe {

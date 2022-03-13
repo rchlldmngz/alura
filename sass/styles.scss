@@ -2,15 +2,20 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 p {
-    font-size: 15px;
-    line-height: 29px;
-    color: black;
-    padding-bottom: 12px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 0;
+    line-height: 20px;
+    color: #ffff;
+    padding-bottom: 16px;
+    padding-right: 10px;
+
+ 
 }
 
 h1 {
     font-size: 60px;
-    color: #63748B;
+    color: #B38955;
 }
 
 h2 {
@@ -20,12 +25,14 @@ h2 {
 }
 
 h3 {
-    color: #63748B;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 29px
+    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    font-family: 'magic school one', sans-serif;
 }
 
 h4 {
@@ -33,19 +40,22 @@ h4 {
 }
 
 h5 {
-    font-size: 18px;
-    color: #63748B;
+    font-size: 25px;
+    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'wizard world', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-weight: bold
 }
 
 h6 {
-    color: #63748B;
-    font-size: 50px;
+    color: #B38955;
+    font-size: 30px;
     letter-spacing: 0px;
     line-height: 29px;
-    font-family: 'aerotis', sans-serif;
+    font-family: 'halimun', sans-serif;
     padding-top: 40px;
                                                 
 }
@@ -85,20 +95,20 @@ h6 {
 /*submit*/
 .btn-fill {
     color: #fff;
-    border: solid 2px #63748B;
+    border: solid 2px #040b31;;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
     text-transform: uppercase;
-    background-color: #63748B
+    background-color: #040b31;
 }
 
 .btn-fill:hover,
 .btn-fill:focus {
     color: black;
-    background-color: #8ab7f7;
-    border-color: #8ab7f7
+    background-color: #0096FF;
+    border-color: #0096FF
 }
 
 .btn-small {
@@ -129,7 +139,7 @@ h6 {
 }
 /*floating arrow bottom*/
 a {
-    color: #63748B;
+    color: #B38955;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
@@ -145,11 +155,14 @@ a:focus {
 }
 /*safety protocol numbered*/
 body {
-    
     font-weight: 300;
     color: black;
     -webkit-text-size-adjust: 100%;
-    background: white;
+    background: url("../img/background.jpg"), center center;
+    background-repeat: no-repeat;
+ 
+    background-size: cover
+
 
 }
 
@@ -175,10 +188,10 @@ section .header {
     padding: 10px 0;
     
 }  
-/*not in use*/
+/*not in use
 .section-border {
     border-bottom: 1px solid #ec0808
-}
+}*/
 
 .tooltip {
     position: absolute;
@@ -356,7 +369,7 @@ section .header {
 }
 
 .nav-toggle span:after {
-    bottom: -10px
+    bottom: 20px
 }
 
 .nav-toggle span,
@@ -404,8 +417,8 @@ section .header {
 }
 
 .hero {
-    min-height: 700px;
-    background: url("../img/banner.png") center center;
+    min-height: 400px;
+    background-image: url("../img/banner.jpg");
     -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -415,7 +428,7 @@ section .header {
 }
 /*floating Arrow top*/
 .hero .down-arrow a {
-    color: #63748B
+    color: #cca371
 }
 /*not in use*/
 .hero h1 {
@@ -431,12 +444,13 @@ section .header {
 }
 
 .hero .hero-content {
-    padding-top: 50%
+    padding-top: 5%
 }
 
 .hero .hero-content img {
-    width: 45%;
-    margin-bottom: 2%
+    width: 140%;
+    position: center;
+    margin-bottom: 0%
 }
 
 .navigation {
@@ -449,14 +463,14 @@ section .header {
 .fixed {
     padding: 0px 0px;
     position: fixed;
-    background-color: #63748bf1;
+    background-color: rgba(15, 13, 27, 0.849);
     z-index: 999;
     width: 100%
 }
 /*inner box of header*/
 header {
     padding: 10px 0px;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(5, 0, 0, 0.2);
     position: relative;
     text-align: left;
     width: 100%;
@@ -479,7 +493,7 @@ header .logo {
 }
 
 header .logo img {
-    height: 75px;
+    width: 55px;
 }
 
 header ul.primary-nav {
@@ -524,8 +538,8 @@ header .header-nav {
 
 header .member-actions {
     position: absolute;
-    right: 0;
-    top: 20px;
+    right: 10px;
+    top: 10px;
     transition: all 300ms ease-in-out
 }
 
@@ -827,7 +841,7 @@ header .member-actions {
 #safety img,
 #other img,
 #instagram img {
-    width: 200%;
+    width: 100%;
 }
 
 #events img {
@@ -835,10 +849,17 @@ header .member-actions {
 }
 
 #swatches img {
-    width: 10%
+    width: 40%
 }
 
-#wear img,
+#swatches2 img {
+    width: 25%
+}
+
+#wear img {
+    width: 70%;
+}
+
 #gift img {
     width: 70%
 }
@@ -1012,7 +1033,7 @@ header .member-actions {
 }
 /*RSVP Icons*/
 .rsvp .rsvp-form .form-input-group i {
-    color: #63748B;
+    color: #040b31;
     font-size: 14px
 }
 
@@ -1114,13 +1135,17 @@ ol {
     padding-left: 35px;
 }
 
-
 strong {
-      Color: #63748B
+    color: #daa520;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'mixserif', sans-serif;
 }
 
 iframe {
     width: 100%;
+    border: blanchedalmond;
+    border-width: 20px;
 }
 
 #radio {
@@ -1130,4 +1155,6 @@ iframe {
 
 .form-check-label {
     font-weight: 300;
+    color: #ffff;
+    font-size: 15px;
 }

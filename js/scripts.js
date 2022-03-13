@@ -1,34 +1,34 @@
 $(document).ready(function () {
 
-
+    
     /***************** Background Audio ******************/
 
-	var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);  
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);  
     
-	var audio = document.createElement("AUDIO");
-	audio.volume = 0.2;
-	document.body.appendChild(audio);
-	audio.src = "./aud/bg_sound.mp3"
+    var audio = document.createElement("AUDIO");
+    audio.volume = 0.2;
+    document.body.appendChild(audio);
+    audio.src = "./aud/bg_sound.mp3"
     audio.loop
 
-	document.body.addEventListener("mousemove", function () {
-		if (isChrome)
-		{
-			audio.play();
-		}
-	});
+    document.body.addEventListener("mousemove", function () {
+        if (isChrome)
+        {
+            audio.play();
+        }
+    });
 
-	Audio.prototype.play = (function(play) {
-	return function () {
-	  var audio = this,
-		  args = arguments,
-		  promise = play.apply(audio, args);
-	  if (promise !== undefined) {
-		promise.catch(_ => {
-		});
-	  }
-	};
-	})(Audio.prototype.play);
+    Audio.prototype.play = (function(play) {
+    return function () {
+      var audio = this,
+          args = arguments,
+          promise = play.apply(audio, args);
+      if (promise !== undefined) {
+        promise.catch(_ => {
+        });
+      }
+    };
+    })(Audio.prototype.play);
 
 
     audio.addEventListener('ended', function() {
@@ -36,6 +36,7 @@ $(document).ready(function () {
         this.play();
     }, false);
     
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
@@ -221,20 +222,20 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Alura's 18th Birthday",
+            title: "Alura turns 18.",
 
             // Event start date
-            start: new Date('April 03, 2022 5:00PM'),
+            start: new Date('April 3, 2022 17:00'),
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('April 03, 2022 21:00'),
+            end: new Date('April 3, 2022 21:00'),
 
             // Event Address
             address: 'The Orchard Golf and Country Club',
 
             // Event Description
-            description: "We can't wait to see you there."
+            description: "See you there."
         }
     });
 
@@ -262,7 +263,7 @@ $(document).ready(function () {
         
         // if attending, validate invite code
 
-        $.post('https://script.google.com/macros/s/AKfycbyaBWkYNqAPNdGubQcMfn2LJXmyO8z-jgBI7yvbBIupyu89eM_umoryzlCV-6yWpXmmDA/exec', data)
+        $.post('https://script.google.com/macros/s/AKfycbzYkuLHh2vOmML0lfaFahM-Y7KdgbpBru-_5GcRmj6pzX_kSpiwheGsildM2UqlP0h4-g/exec', data)
             .done(function (data) {
                 console.log(data);
                 if (data.result === "error") {

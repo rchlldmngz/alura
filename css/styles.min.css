@@ -2,13 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 p {
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 1px;
-    font-weight: -100;
+    font-weight: -300;
     line-height: 23px;
     color: #ffff;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
     padding-right: 10px;
+    font-family: 'Quintella', sans-serif;
 }
 
 h1 {
@@ -30,7 +31,7 @@ h3 {
     font-weight: 300;
     letter-spacing: 0px;
     line-height: 80px;
-    font-family: 'Aquiline', sans-serif;
+    font-family: 'Quintella', sans-serif;
 }
 
 h4 {
@@ -1133,20 +1134,10 @@ ol {
     padding-left: 35px;
 }
 
-ara {
-    
-    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'windsong', sans-serif;
-    font-size: 34px;
-}
-
 strong {
-    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      font-size: 12px;
+    color: #daa520;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 iframe {

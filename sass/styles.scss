@@ -12,14 +12,19 @@ p {
 }
 
 h1 {
-    font-size: 60px;
-    color: #B38955;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, #b8860b, #daa520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'mixserif', sans-serif;
+
 }
 
 h2 {
     font-size: 40px;
     font-weight: 300;
-    color: black
+    color: black;
+    
 }
 
 h3 {

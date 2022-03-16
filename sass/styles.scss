@@ -850,7 +850,10 @@ header .member-actions {
     width: 100%;
 }
 
-#safety img,
+#safety img {
+    width: 80%;
+}
+
 #swatches img {
     width: 50%
 }
